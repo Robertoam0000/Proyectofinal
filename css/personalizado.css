@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,600&display=swap');
+
+/*CSS Reset*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider {
+   width: 100%;
+   margin:auto;
+   overflow:hidden;
+}
+
+.slider ul {
+    display:flex;
+    padding: 0;
+    width: 300%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+width: 100%;
+list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+0% {margin-left: 0%;}
+25% {margin-left: 0%;}
+
+30% {margin-left: -100%;}
+45% {margin-left: -100%;}
+
+60% {margin-left: -200%; }
+100% {margin-left: -200;}
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_3 {
+    width: 350px;
+    height: 250px;
+    margin-right: 25px;
+}
+
+.imagen_4 {
+    width: 350px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.imagen_5 {
+    width: 350px;
+    height: 250px;
+    margin-left: 25px;
+}
+
+.imagen_6 {
+    width: 350px;
+    height: 250px;
+    margin-right: 45px;
+}
+
+.imagen_7 {
+    width: 350px;
+    height: 250px;
+    margin-right: 45px;
+}
+
+.imagen_8 {
+    width: 350px;
+    height: 250px;
+    margin-right: 45px;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;  
+    text-decoration: none;
+    list-style: none; 
+    box-sizing: border-box; 
+
+}
+
+
+
+/* Media query */
+
+/* Banner Nosotros */
+.banner-top{
+    background: url(/img/banner1.jpg);
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* navegacion*/
+
+
+.center1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: beige;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(251, 252, 251);
+}
+
+.texto{
+    background-color: rgb(240, 244, 255);
+    border-radius: 5px;
+    text-align:center;
+   
+   font-size: 15px;
+}
+
+
+.buttom{
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+
+
+.fondo{
+    border-radius: 10px;
+ background-position: center center;
+}
+
+
+
+.dp-movil{
+    display: none!important;
+ } 
+ 
+ .dp-lg{
+    display: block;
+ }
+
+.nav-link{
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #bbbbbbc4;
+}
+
+/* Barra superior */
+ #menuStiky{
+     z-index: 1;
+     border-bottom: 2px solid #6a6883;
+     backdrop-filter: saturate(200%) blur(30px);
+     background-color: rgb(33, 107, 243)!important;
+     box-shadow: rgba(0,0,0,0.5) 0 3px 12px 1px;
+    }
+    
+    .banner-background{
+        position: fixed;
+        top: 0;     
+    }
+
+
+    
+@media only screen and ( max-width: 600px){
+
+    .dp-movil{
+       display: block!important;
+    }  
+    
+
+    #carouselExampleIndicators{
+        height: 480px;
+    }
+
+    
+    .dp-lg{
+        display: none!important;
+    }
+
+}
+
+.espacio{
+    margin-bottom: -7px;
+    margin-right: 10px;
+}
